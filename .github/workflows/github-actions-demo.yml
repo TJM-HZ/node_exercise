@@ -5,3 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Good Job"
+      - uses: actions/checkout@v3
+      - run: npm ci
+      - run: npm test
